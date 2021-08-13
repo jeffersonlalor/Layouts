@@ -7,24 +7,39 @@
 
 import SwiftUI
 
+// MARK: - Constants
+public let homeViewRows = [
+    HomeViewRowEntity(destination: .circleImageView),
+]
+
 struct HomeView: View {
-    var views = [HomeViewEntity]()
+    //MARK: - Attributs
+    var rows = [HomeViewRowEntity]()
     
+    // MARK: - View
     var body: some View {
         NavigationView {
-            List(views) { viewItem in
-                HomeViewCell(viewEntity: viewItem)
-                    .padding(5)
+            List(rows) { row in
+                NavigationLink(destination: getDestinationWith(row.destination)) {
+                    HomeViewRow(viewEntity: row)
+                        .padding(5)
+                }
             }.navigationBarTitle(Text("SwiftUI"))
+        }
+    }
+    
+    // MARK: - Private methods
+    private func getDestinationWith(_ rowType: HomeViewDestinationType) -> some View {
+        switch rowType {
+        case .circleImageView:
+            return CircleImageView()
         }
     }
 }
 
+// MARK: - Preview
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(views: [
-            HomeViewEntity(title: "Easy View 1"),
-            HomeViewEntity(title: "Easy View 2")
-        ])
+        HomeView(rows: homeViewRows)
     }
 }

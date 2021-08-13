@@ -11,7 +11,7 @@ import SwiftUI
 struct LayoutsApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            HomeView(rows: homeViewRows)
         }
     }
 }

@@ -7,9 +7,11 @@
 
 import SwiftUI
 
-struct HomeViewCell: View {
-    var viewEntity: HomeViewEntity
+struct HomeViewRow: View {
+    //MARK: - Attributs
+    var viewEntity: HomeViewRowEntity
     
+    // MARK: - View
     var body: some View {
         HStack(alignment: .center) {
             Text(viewEntity.title)
@@ -17,8 +19,9 @@ struct HomeViewCell: View {
     }
 }
 
+// MARK: - Preview
 struct HomeViewCell_Previews: PreviewProvider {
     static var previews: some View {
-        HomeViewCell(viewEntity: HomeViewEntity(title: "Easy View"))
+        HomeViewRow(viewEntity: HomeViewRowEntity(destination: .circleImageView))
     }
 }

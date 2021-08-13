@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "sogeking-image.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
