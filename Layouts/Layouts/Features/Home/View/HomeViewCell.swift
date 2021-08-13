@@ -8,21 +8,17 @@
 import SwiftUI
 
 struct HomeViewCell: View {
+    var viewEntity: HomeViewEntity
+    
     var body: some View {
         HStack(alignment: .center) {
-            Image(systemName: "photo")
-            VStack(alignment: .leading) {
-                Text("Name View")
-                Text("Name Subview Title")
-                    .font(.subheadline)
-                    .foregroundColor(.gray)
-            }
+            Text(viewEntity.title)
         }
     }
 }
 
 struct HomeViewCell_Previews: PreviewProvider {
     static var previews: some View {
-        HomeViewCell()
+        HomeViewCell(viewEntity: HomeViewEntity(title: "Easy View"))
     }
 }

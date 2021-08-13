@@ -8,15 +8,23 @@
 import SwiftUI
 
 struct HomeView: View {
+    var views = [HomeViewEntity]()
+    
     var body: some View {
-        List(0 ..< 5) { _ in
-            HomeViewCell()
+        NavigationView {
+            List(views) { viewItem in
+                HomeViewCell(viewEntity: viewItem)
+                    .padding(5)
+            }.navigationBarTitle(Text("SwiftUI"))
         }
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(views: [
+            HomeViewEntity(title: "Easy View 1"),
+            HomeViewEntity(title: "Easy View 2")
+        ])
     }
 }

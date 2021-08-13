@@ -12,6 +12,7 @@
 		1C42CA4426C5EADC007C0C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C42CA4326C5EADC007C0C23 /* Assets.xcassets */; };
 		1C42CA4726C5EADC007C0C23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C42CA4626C5EADC007C0C23 /* Preview Assets.xcassets */; };
 		1C42CA5226C5F251007C0C23 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C42CA5126C5F251007C0C23 /* HomeViewCell.swift */; };
+		1C42CA5526C5F626007C0C23 /* HomeViewEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C42CA5426C5F626007C0C23 /* HomeViewEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1C42CA4626C5EADC007C0C23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1C42CA4826C5EADC007C0C23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C42CA5126C5F251007C0C23 /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
+		1C42CA5426C5F626007C0C23 /* HomeViewEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		1C42CA4F26C5EFB4007C0C23 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1C42CA5326C5F5EF007C0C23 /* Model */,
 				1C42CA5026C5EFBD007C0C23 /* View */,
 			);
 			path = Home;
@@ -94,6 +97,14 @@
 				1C42CA5126C5F251007C0C23 /* HomeViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1C42CA5326C5F5EF007C0C23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C42CA5426C5F626007C0C23 /* HomeViewEntity.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 				1C42CA4226C5EADA007C0C23 /* HomeView.swift in Sources */,
 				1C42CA4026C5EADA007C0C23 /* LayoutsApp.swift in Sources */,
 				1C42CA5226C5F251007C0C23 /* HomeViewCell.swift in Sources */,
+				1C42CA5526C5F626007C0C23 /* HomeViewEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
