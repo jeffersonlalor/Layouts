@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         List(0 ..< 5) { _ in
-            Text("Hello, world!").padding()
+            HomeViewCell()
         }
     }
 }
