@@ -10,6 +10,7 @@ import SwiftUI
 // MARK: - Constants
 public let homeViewRows = [
     HomeViewRowEntity(destination: .circleImageView),
+    HomeViewRowEntity(destination: .mapView),
 ]
 
 struct HomeView: View {
@@ -24,7 +25,8 @@ struct HomeView: View {
                     HomeViewRow(viewEntity: row)
                         .padding(5)
                 }
-            }.navigationBarTitle(Text("SwiftUI"))
+            }
+            .navigationBarTitle(Text("SwiftUI"))
         }
     }
     
@@ -32,7 +34,9 @@ struct HomeView: View {
     private func getDestinationWith(_ rowType: HomeViewDestinationType) -> some View {
         switch rowType {
         case .circleImageView:
-            return CircleImageView()
+            return CircleImageView().anyView()
+        case .mapView:
+            return MapView().anyView()
         }
     }
 }

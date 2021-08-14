@@ -24,6 +24,8 @@ struct CircleImageView: View {
             .clipShape(Circle())
             .overlay(Circle().stroke(Color.white, lineWidth: Metrics.circleLineWidth))
             .shadow(radius: Metrics.shadowRadius)
+            .navigationBarTitleDisplayMode(.inline)
+            .ignoresSafeArea()
     }
 }
 

@@ -8,7 +8,7 @@
 import SwiftUI
 
 public struct HomeViewRowEntity: Identifiable {
-    public let id: String = UUID().uuidString
+    public let id = UUID()
     public let destination: HomeViewDestinationType
     public var title: String {
         get { destination.rawValue }
@@ -17,4 +17,5 @@ public struct HomeViewRowEntity: Identifiable {
 
 public enum HomeViewDestinationType: String {
     case circleImageView = "CircleImageView"
+    case mapView = "MapView"
 }
