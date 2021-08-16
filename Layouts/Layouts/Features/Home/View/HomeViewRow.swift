@@ -20,7 +20,7 @@ struct HomeViewRow: View {
 }
 
 // MARK: - Preview
-struct HomeViewCell_Previews: PreviewProvider {
+struct HomeViewRow_Previews: PreviewProvider {
     static var previews: some View {
         HomeViewRow(viewEntity: HomeViewRowEntity(destination: .circleImageView))
     }

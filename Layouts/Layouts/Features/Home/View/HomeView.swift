@@ -11,10 +11,11 @@ import SwiftUI
 public let homeViewRows = [
     HomeViewRowEntity(destination: .circleImageView),
     HomeViewRowEntity(destination: .mapView),
+    HomeViewRowEntity(destination: .exampleDetails)
 ]
 
 struct HomeView: View {
-    //MARK: - Attributs
+    //MARK: - Attributes
     var rows = [HomeViewRowEntity]()
     
     // MARK: - View
@@ -37,6 +38,8 @@ struct HomeView: View {
             return CircleImageView().anyView()
         case .mapView:
             return MapView().anyView()
+        case .exampleDetails:
+            return ExampleDetailsView().anyView()
         }
     }
 }

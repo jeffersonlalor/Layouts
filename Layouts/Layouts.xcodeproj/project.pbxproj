@@ -17,6 +17,8 @@
 		1C42CA5C26C718CD007C0C23 /* ImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C42CA5B26C718CD007C0C23 /* ImageName.swift */; };
 		1C443BA926C8231B0086B2CF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C443BA826C8231B0086B2CF /* MapView.swift */; };
 		1C443BAD26C828CE0086B2CF /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C443BAC26C828CE0086B2CF /* View+Extension.swift */; };
+		1C49E9DB26CAE76B006D8E69 /* ExampleDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C49E9DA26CAE76B006D8E69 /* ExampleDetailsView.swift */; };
+		1C49E9DD26CAF34A006D8E69 /* ExampleDetailsDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C49E9DC26CAF34A006D8E69 /* ExampleDetailsDescription.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		1C42CA5B26C718CD007C0C23 /* ImageName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageName.swift; sourceTree = "<group>"; };
 		1C443BA826C8231B0086B2CF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		1C443BAC26C828CE0086B2CF /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		1C49E9DA26CAE76B006D8E69 /* ExampleDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleDetailsView.swift; sourceTree = "<group>"; };
+		1C49E9DC26CAF34A006D8E69 /* ExampleDetailsDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleDetailsDescription.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 				1C42CA4F26C5EFB4007C0C23 /* Home */,
 				1C42CA5626C71796007C0C23 /* CircleImage */,
 				1C443BA626C822FA0086B2CF /* Map */,
+				1C49E9D826CAE72D006D8E69 /* ExampleDetails */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -175,6 +180,23 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		1C49E9D826CAE72D006D8E69 /* ExampleDetails */ = {
+			isa = PBXGroup;
+			children = (
+				1C49E9D926CAE75A006D8E69 /* View */,
+			);
+			path = ExampleDetails;
+			sourceTree = "<group>";
+		};
+		1C49E9D926CAE75A006D8E69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C49E9DA26CAE76B006D8E69 /* ExampleDetailsView.swift */,
+				1C49E9DC26CAF34A006D8E69 /* ExampleDetailsDescription.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,6 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C49E9DB26CAE76B006D8E69 /* ExampleDetailsView.swift in Sources */,
+				1C49E9DD26CAF34A006D8E69 /* ExampleDetailsDescription.swift in Sources */,
 				1C443BA926C8231B0086B2CF /* MapView.swift in Sources */,
 				1C42CA5C26C718CD007C0C23 /* ImageName.swift in Sources */,
 				1C443BAD26C828CE0086B2CF /* View+Extension.swift in Sources */,

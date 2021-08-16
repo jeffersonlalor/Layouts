@@ -18,4 +18,5 @@ public struct HomeViewRowEntity: Identifiable {
 public enum HomeViewDestinationType: String {
     case circleImageView = "CircleImageView"
     case mapView = "MapView"
+    case exampleDetails = "CircleImageView + MapView"
 }
