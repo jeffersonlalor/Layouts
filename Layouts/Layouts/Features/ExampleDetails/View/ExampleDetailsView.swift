@@ -16,7 +16,7 @@ struct ExampleDetailsView: View {
     
     // MARK: - View
     var body: some View {
-        VStack {
+        ScrollView {
             MapView()
                 .frame(height: Metrics.mapViewHeight)
             
