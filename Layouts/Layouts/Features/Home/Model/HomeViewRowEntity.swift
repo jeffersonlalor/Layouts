@@ -11,7 +11,7 @@ public struct HomeViewRowEntity: Identifiable {
     public let id = UUID()
     public let destination: HomeViewDestinationType
     public var title: String {
-        get { destination.rawValue }
+        destination.rawValue
     }
 }
 
