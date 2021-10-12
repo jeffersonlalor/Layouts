@@ -8,13 +8,11 @@
 import SwiftUI
 
 struct ExampleDetailsView: View {
-    // MARK: - Matrics
     private struct Metrics {
         static let mapViewHeight: CGFloat = 300
         static let circleViewOffset: CGFloat = -130
     }
     
-    // MARK: - View
     var body: some View {
         ScrollView {
             MapView()
@@ -24,7 +22,7 @@ struct ExampleDetailsView: View {
                 .offset(y: Metrics.circleViewOffset)
                 .padding(.bottom, Metrics.circleViewOffset)
             
-            ExampleDetailsDescription()
+            ExampleDetailsDescriptionView()
                 .padding()
             
             Spacer()
@@ -34,7 +32,6 @@ struct ExampleDetailsView: View {
     }
 }
 
-// MARK: - Preview
 struct ExampleDetailsView_Previews: PreviewProvider {
     static var previews: some View {
         ExampleDetailsView()

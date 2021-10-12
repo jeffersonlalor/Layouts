@@ -7,46 +7,41 @@
 
 import SwiftUI
 
-// MARK: - Constants
-public let homeViewRows = [
-    HomeViewRowEntity(destination: .circleImageView),
-    HomeViewRowEntity(destination: .mapView),
-    HomeViewRowEntity(destination: .exampleDetails)
-]
-
 struct HomeView: View {
-    //MARK: - Attributes
-    var rows = [HomeViewRowEntity]()
+    let data: HomeViewData
     
-    // MARK: - View
-    var body: some View {
-        NavigationView {
-            List(rows) { row in
-                NavigationLink(destination: getDestinationWith(row.destination)) {
-                    HomeViewRow(viewEntity: row)
-                        .padding(5)
-                }
+    private struct HomeDestinationView: View {
+        let destination: HomeViewDestinationType
+
+        @ViewBuilder var destinationView: some View {
+            switch destination {
+            case .circleImageView: CircleImageView()
+            case .mapView: MapView()
+            case .exampleDetails: ExampleDetailsView()
             }
-            .navigationBarTitle(Text("SwiftUI"))
+        }
+        
+        var body: some View {
+            destinationView
         }
     }
     
-    // MARK: - Private methods
-    private func getDestinationWith(_ rowType: HomeViewDestinationType) -> some View {
-        switch rowType {
-        case .circleImageView:
-            return CircleImageView().anyView()
-        case .mapView:
-            return MapView().anyView()
-        case .exampleDetails:
-            return ExampleDetailsView().anyView()
+    var body: some View {
+        NavigationView {
+            List(data.rows) { row in
+                NavigationLink(destination: HomeDestinationView(destination: row.destination)) {
+                    HomeRowView(data: row)
+                        .padding(5)
+                }
+            }
+            .navigationBarTitle(Text(Strings.Home.navigationTitle))
         }
     }
 }
 
-// MARK: - Preview
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(rows: homeViewRows)
+        HomeView(data: .Mock.rows)
+            .previewLayout(.sizeThatFits)
     }
 }

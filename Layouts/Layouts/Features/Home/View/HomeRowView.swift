@@ -7,21 +7,19 @@
 
 import SwiftUI
 
-struct HomeViewRow: View {
-    //MARK: - Attributs
-    var viewEntity: HomeViewRowEntity
+struct HomeRowView: View {
+    let data: HomeRowViewData
     
-    // MARK: - View
     var body: some View {
         HStack(alignment: .center) {
-            Text(viewEntity.title)
+            Text(data.title)
         }
     }
 }
 
-// MARK: - Preview
 struct HomeViewRow_Previews: PreviewProvider {
     static var previews: some View {
-        HomeViewRow(viewEntity: HomeViewRowEntity(destination: .circleImageView))
+        HomeRowView(data: .Mock.mapView)
+            .previewLayout(.sizeThatFits)
     }
 }

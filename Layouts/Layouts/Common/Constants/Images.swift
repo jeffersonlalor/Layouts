@@ -7,6 +7,6 @@
 
 import Foundation
 
-public enum ImageName: String {
+enum Images: String {
     case sogeking = "sogeking-image"
 }
