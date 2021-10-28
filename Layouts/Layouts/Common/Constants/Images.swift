@@ -9,4 +9,6 @@ import Foundation
 
 enum Images: String {
     case sogeking = "sogeking-image"
+    case circle = "circle"
+    case circleFilled = "circle.inset.filled"
 }

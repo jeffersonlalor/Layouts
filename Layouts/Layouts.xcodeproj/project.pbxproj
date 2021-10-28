@@ -17,11 +17,15 @@
 		1C443BA926C8231B0086B2CF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C443BA826C8231B0086B2CF /* MapView.swift */; };
 		1C49E9DB26CAE76B006D8E69 /* ExampleDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C49E9DA26CAE76B006D8E69 /* ExampleDetailsView.swift */; };
 		1C49E9DD26CAF34A006D8E69 /* ExampleDetailsDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C49E9DC26CAF34A006D8E69 /* ExampleDetailsDescriptionView.swift */; };
+		A2306551272B2F91002CAD8C /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2306550272B2F91002CAD8C /* ToggleButton.swift */; };
+		A2306553272B3025002CAD8C /* ToggleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2306552272B3025002CAD8C /* ToggleRowView.swift */; };
+		A2306555272B3467002CAD8C /* ToggleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2306554272B3467002CAD8C /* ToggleListView.swift */; };
 		A24A00792715EC0200C63219 /* HomeRowViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24A00782715EC0200C63219 /* HomeRowViewData.swift */; };
 		A24A007B2715ED5900C63219 /* HomeRowViewData+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24A007A2715ED5900C63219 /* HomeRowViewData+Mock.swift */; };
 		A24A007D2715EFE000C63219 /* HomeViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24A007C2715EFE000C63219 /* HomeViewData.swift */; };
 		A24A007F2715F22900C63219 /* HomeViewData+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24A007E2715F22900C63219 /* HomeViewData+Mock.swift */; };
 		A24A00812715F8BE00C63219 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24A00802715F8BE00C63219 /* Strings.swift */; };
+		A2B39BB1272E093800CFDF57 /* ToggleListViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B39BB0272E093800CFDF57 /* ToggleListViewData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,11 +41,15 @@
 		1C443BA826C8231B0086B2CF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		1C49E9DA26CAE76B006D8E69 /* ExampleDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleDetailsView.swift; sourceTree = "<group>"; };
 		1C49E9DC26CAF34A006D8E69 /* ExampleDetailsDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleDetailsDescriptionView.swift; sourceTree = "<group>"; };
+		A2306550272B2F91002CAD8C /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		A2306552272B3025002CAD8C /* ToggleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleRowView.swift; sourceTree = "<group>"; };
+		A2306554272B3467002CAD8C /* ToggleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleListView.swift; sourceTree = "<group>"; };
 		A24A00782715EC0200C63219 /* HomeRowViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRowViewData.swift; sourceTree = "<group>"; };
 		A24A007A2715ED5900C63219 /* HomeRowViewData+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeRowViewData+Mock.swift"; sourceTree = "<group>"; };
 		A24A007C2715EFE000C63219 /* HomeViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewData.swift; sourceTree = "<group>"; };
 		A24A007E2715F22900C63219 /* HomeViewData+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewData+Mock.swift"; sourceTree = "<group>"; };
 		A24A00802715F8BE00C63219 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		A2B39BB0272E093800CFDF57 /* ToggleListViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleListViewData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,7 @@
 		1C42CA4E26C5EFAA007C0C23 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				A250BB632729FB2C007EB29F /* ToggleList */,
 				1C42CA4F26C5EFB4007C0C23 /* Home */,
 				1C42CA5626C71796007C0C23 /* CircleImage */,
 				1C443BA626C822FA0086B2CF /* Map */,
@@ -187,6 +196,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A2306558272B677A002CAD8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2306550272B2F91002CAD8C /* ToggleButton.swift */,
+				A2306552272B3025002CAD8C /* ToggleRowView.swift */,
+				A2306554272B3467002CAD8C /* ToggleListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A24A00772715EBD100C63219 /* ViewData */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +213,23 @@
 				A24A007A2715ED5900C63219 /* HomeRowViewData+Mock.swift */,
 				A24A007C2715EFE000C63219 /* HomeViewData.swift */,
 				A24A007E2715F22900C63219 /* HomeViewData+Mock.swift */,
+			);
+			path = ViewData;
+			sourceTree = "<group>";
+		};
+		A250BB632729FB2C007EB29F /* ToggleList */ = {
+			isa = PBXGroup;
+			children = (
+				A2B39BAF272E092700CFDF57 /* ViewData */,
+				A2306558272B677A002CAD8C /* View */,
+			);
+			path = ToggleList;
+			sourceTree = "<group>";
+		};
+		A2B39BAF272E092700CFDF57 /* ViewData */ = {
+			isa = PBXGroup;
+			children = (
+				A2B39BB0272E093800CFDF57 /* ToggleListViewData.swift */,
 			);
 			path = ViewData;
 			sourceTree = "<group>";
@@ -273,13 +309,17 @@
 				1C42CA5C26C718CD007C0C23 /* Images.swift in Sources */,
 				1C42CA4226C5EADA007C0C23 /* HomeView.swift in Sources */,
 				1C42CA4026C5EADA007C0C23 /* LayoutsApp.swift in Sources */,
+				A2306553272B3025002CAD8C /* ToggleRowView.swift in Sources */,
 				A24A007B2715ED5900C63219 /* HomeRowViewData+Mock.swift in Sources */,
+				A2B39BB1272E093800CFDF57 /* ToggleListViewData.swift in Sources */,
 				A24A00812715F8BE00C63219 /* Strings.swift in Sources */,
 				1C42CA5226C5F251007C0C23 /* HomeRowView.swift in Sources */,
 				A24A00792715EC0200C63219 /* HomeRowViewData.swift in Sources */,
 				1C42CA5926C717BD007C0C23 /* CircleImageView.swift in Sources */,
+				A2306551272B2F91002CAD8C /* ToggleButton.swift in Sources */,
 				A24A007F2715F22900C63219 /* HomeViewData+Mock.swift in Sources */,
 				A24A007D2715EFE000C63219 /* HomeViewData.swift in Sources */,
+				A2306555272B3467002CAD8C /* ToggleListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

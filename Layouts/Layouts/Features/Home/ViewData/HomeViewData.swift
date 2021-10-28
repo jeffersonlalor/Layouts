@@ -12,7 +12,8 @@ struct HomeViewData {
         [
             HomeRowViewData(destination: .circleImageView),
             HomeRowViewData(destination: .mapView),
-            HomeRowViewData(destination: .exampleDetails)
+            HomeRowViewData(destination: .exampleDetails),
+            HomeRowViewData(destination: .toggleList)
         ]
     }
 }

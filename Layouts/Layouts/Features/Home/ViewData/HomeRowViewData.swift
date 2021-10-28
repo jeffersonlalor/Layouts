@@ -11,11 +11,13 @@ enum HomeViewDestinationType: String {
     case circleImageView = "CircleImageView"
     case mapView = "MapView"
     case exampleDetails = "CircleImageView + MapView"
+    case toggleList = "ToogleList"
 }
 
 public struct HomeRowViewData: Identifiable {
     public let id = UUID()
     let destination: HomeViewDestinationType
+    
     var title: String {
         destination.rawValue
     }

@@ -18,6 +18,7 @@ struct HomeView: View {
             case .circleImageView: CircleImageView()
             case .mapView: MapView()
             case .exampleDetails: ExampleDetailsView()
+            case .toggleList: ToggleListView()
             }
         }
         
